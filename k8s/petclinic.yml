@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
         - name: petclinic
-          image: nkuriakose1/spring-petclinic:<+artifact.tag>
+          image: {{.Values.image}}
           ports:
             - name: http
               containerPort: 8080
